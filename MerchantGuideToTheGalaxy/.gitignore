@@ -23,12 +23,5 @@
 hs_err_pid*
 replay_pid*
 
-#files added by me
-*.gradle
-/.gradle
-/gradle
-README.md
-/.idea
-/build
-gradlew
-gradlew.bat
+
+
