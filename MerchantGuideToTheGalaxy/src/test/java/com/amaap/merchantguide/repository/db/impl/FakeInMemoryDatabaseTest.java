@@ -7,6 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class FakeInMemoryDatabaseTest {
     FakeInMemoryDatabase fakeInMemoryDatabase = new FakeInMemoryDatabase();
+
     @Test
     void shouldBeAbleToAddIntergalacticUnit() {
         // arrange
