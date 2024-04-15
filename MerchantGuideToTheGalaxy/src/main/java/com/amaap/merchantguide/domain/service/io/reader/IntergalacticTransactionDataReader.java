@@ -6,15 +6,14 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class IntergalacticTransactionDataReader {
-    public boolean readTransactionData(File file) {
+    public boolean readTransactionData(File file) throws IOException {
         try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
             String line;
             while ((line = reader.readLine()) != null) {
                 System.out.println(line);
             }
         } catch (IOException e) {
-            System.err.println("Error: " + e.getMessage());
-            return false;
+            throw new IOException(e.getMessage());
         }
         return true;
     }
