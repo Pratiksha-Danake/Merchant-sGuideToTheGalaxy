@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.amaap.merchantguide.service.IntergalacticUnitServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-04-15T17:34:00" hostname="DESKTOP-GUO1275" time="0.029">
+  <properties/>
+  <testcase name="shouldBeAbleToAddIntergalacticUnit()" classname="com.amaap.merchantguide.service.IntergalacticUnitServiceTest" time="0.029"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -3,12 +3,15 @@ package com.amaap.merchantguide.controller;
 import com.amaap.merchantguide.domain.model.entity.IntergalacticUnit;
 import com.amaap.merchantguide.domain.model.valueobject.HttpStatus;
 import com.amaap.merchantguide.domain.model.valueobject.Response;
+import com.amaap.merchantguide.service.IntergalacticUnitService;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class IntergalacticUnitControllerTest {
-    IntergalacticUnitController intergalacticUnitController = new IntergalacticUnitController();
+    IntergalacticUnitService intergalacticUnitService = new IntergalacticUnitService();
+    IntergalacticUnitController intergalacticUnitController =
+            new IntergalacticUnitController(intergalacticUnitService);
 
     @Test
     void shouldBeAbleToReturnResponseAsOKIfAddsIntergalacticUnit() {
