@@ -1,4 +1,4 @@
-package com.amaap.merchantguide.domain.model.validator;
+package com.amaap.merchantguide.domain.model.entity.validator;
 
 public class IntergalacticUnitValidator {
 

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.amaap.merchantguide.domain.service.io.reader.extractor.MetalCreditExtractorTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-04-15T16:29:16" hostname="DESKTOP-GUO1275" time="0.049">
-  <properties/>
-  <testcase name="shouldBeAbleToExtractAndReturnMetalAndValueFromInputLine()" classname="com.amaap.merchantguide.domain.service.io.reader.extractor.MetalCreditExtractorTest" time="0.049"/>
-  <system-out><![CDATA[34glob glob Silver
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
