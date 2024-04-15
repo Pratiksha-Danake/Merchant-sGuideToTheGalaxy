@@ -12,7 +12,6 @@ public class IntergalacticUnitService {
     }
 
     public boolean addIntergalacticUnit(IntergalacticUnit intergalacticUnitToAdd) {
-        intergalacticUnitRepository.addIntergalacticUnit(intergalacticUnitToAdd);
-        return true;
+        return intergalacticUnitRepository.addIntergalacticUnit(intergalacticUnitToAdd);
     }
 }
