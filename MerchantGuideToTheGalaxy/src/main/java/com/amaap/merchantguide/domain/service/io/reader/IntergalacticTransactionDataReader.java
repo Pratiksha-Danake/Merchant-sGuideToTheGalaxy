@@ -1,8 +1,8 @@
 package com.amaap.merchantguide.domain.service.io.reader;
 
 import com.amaap.merchantguide.domain.service.io.reader.extractor.IntergalacticUnitExtractor;
-import com.amaap.merchantguide.domain.service.io.reader.extractor.MetalValueExtractor;
-import com.amaap.merchantguide.domain.service.io.reader.extractor.QueryExtracter;
+import com.amaap.merchantguide.domain.service.io.reader.extractor.MetalCreditExtractor;
+import com.amaap.merchantguide.domain.service.io.reader.extractor.QueryExtractor;
 import com.amaap.merchantguide.domain.service.io.reader.validator.InputLineValidator;
 
 import java.io.BufferedReader;
@@ -24,9 +24,9 @@ public class IntergalacticTransactionDataReader {
                 if (inputLineValidator.isValidUnitLine(line))
                     IntergalacticUnitExtractor.getIntergalacticUnit(line);
                 else if (inputLineValidator.isValidMetalCreditLine(line))
-                    MetalValueExtractor.getMetalAndValue(line);
+                    MetalCreditExtractor.getMetalCredit(line);
                 else if (inputLineValidator.isValidQueryLine(line))
-                    QueryExtracter.getQuery(line);
+                    QueryExtractor.getQuery(line);
 //                else
 //                    throw new InvalidInputDataLineException("Not Useful Data Found..!");
             }

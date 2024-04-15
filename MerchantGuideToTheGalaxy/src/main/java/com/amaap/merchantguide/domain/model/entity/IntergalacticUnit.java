@@ -3,8 +3,8 @@ package com.amaap.merchantguide.domain.model.entity;
 import java.util.Objects;
 
 public class IntergalacticUnit {
-    private String name;
-    private String romanValue;
+    private final String name;
+    private final String romanValue;
 
     public IntergalacticUnit(String name, String romanValue) {
         this.name = name;
