@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.amaap.merchantguide.repository.impl.InMemoryIntergalacticUnitRepositoryTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-04-15T18:02:22" hostname="DESKTOP-GUO1275" time="0.026">
+  <properties/>
+  <testcase name="shouldBeAbleToAddIntergalacticUnitToDatabase()" classname="com.amaap.merchantguide.repository.impl.InMemoryIntergalacticUnitRepositoryTest" time="0.026"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
