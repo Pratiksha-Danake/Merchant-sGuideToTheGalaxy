@@ -6,7 +6,7 @@ import com.amaap.merchantguide.repository.db.InMemoryDatabase;
 import com.amaap.merchantguide.repository.db.impl.FakeInMemoryDatabase;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class InMemoryIntergalacticUnitRepositoryTest {
     InMemoryDatabase inMemoryDatabase = new FakeInMemoryDatabase();
@@ -14,7 +14,7 @@ class InMemoryIntergalacticUnitRepositoryTest {
             new InMemoryIntergalacticUnitRepository(inMemoryDatabase);
 
     @Test
-    void shouldBeAbleToAddIntergalacticUnitToDatabase(){
+    void shouldBeAbleToAddIntergalacticUnitToDatabase() {
         // arrange
         IntergalacticUnit intergalacticUnitToAdd = IntergalacticUnit.create("glob", "I");
 

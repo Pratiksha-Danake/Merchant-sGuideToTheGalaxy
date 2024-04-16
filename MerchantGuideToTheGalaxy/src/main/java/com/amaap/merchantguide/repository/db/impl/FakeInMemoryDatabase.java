@@ -8,10 +8,9 @@ import java.util.List;
 
 public class FakeInMemoryDatabase implements InMemoryDatabase {
     List<IntergalacticUnit> intergalacticUnits = new ArrayList<>();
+
     @Override
     public boolean addIntergalacticUnit(IntergalacticUnit intergalacticUnitToAdd) {
-        if (intergalacticUnits.add(intergalacticUnitToAdd))
-            return true;
-        return false;
+        return intergalacticUnits.add(intergalacticUnitToAdd);
     }
 }

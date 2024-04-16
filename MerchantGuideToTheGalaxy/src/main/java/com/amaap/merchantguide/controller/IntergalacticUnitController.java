@@ -6,7 +6,7 @@ import com.amaap.merchantguide.domain.model.valueobject.Response;
 import com.amaap.merchantguide.service.IntergalacticUnitService;
 
 public class IntergalacticUnitController {
-    private IntergalacticUnitService intergalacticUnitService;
+    private final IntergalacticUnitService intergalacticUnitService;
 
     public IntergalacticUnitController(IntergalacticUnitService intergalacticUnitService) {
         this.intergalacticUnitService = intergalacticUnitService;

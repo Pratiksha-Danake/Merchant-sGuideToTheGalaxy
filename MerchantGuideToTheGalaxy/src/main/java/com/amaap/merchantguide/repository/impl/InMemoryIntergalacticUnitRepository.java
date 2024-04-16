@@ -5,7 +5,7 @@ import com.amaap.merchantguide.repository.IntergalacticUnitRepository;
 import com.amaap.merchantguide.repository.db.InMemoryDatabase;
 
 public class InMemoryIntergalacticUnitRepository implements IntergalacticUnitRepository {
-    private InMemoryDatabase inMemoryDatabase;
+    private final InMemoryDatabase inMemoryDatabase;
 
     public InMemoryIntergalacticUnitRepository(InMemoryDatabase inMemoryDatabase) {
         this.inMemoryDatabase = inMemoryDatabase;
