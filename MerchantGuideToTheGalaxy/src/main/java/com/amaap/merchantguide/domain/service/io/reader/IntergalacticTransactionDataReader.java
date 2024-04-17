@@ -5,10 +5,7 @@ import com.amaap.merchantguide.domain.service.io.reader.extractor.MetalCreditExt
 import com.amaap.merchantguide.domain.service.io.reader.extractor.QueryExtractor;
 import com.amaap.merchantguide.domain.service.io.reader.validator.InputLineValidator;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 
 public class IntergalacticTransactionDataReader {
     private final InputLineValidator inputLineValidator;
@@ -30,8 +27,8 @@ public class IntergalacticTransactionDataReader {
 //                else
 //                    throw new InvalidInputDataLineException("Not Useful Data Found..!");
             }
-        } catch (IOException e) {
-            throw new IOException(e.getMessage());
+        } catch (FileNotFoundException e) {
+            throw new FileNotFoundException(e.getMessage());
         }
         return true;
     }

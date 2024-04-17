@@ -12,6 +12,7 @@ public class IntergalacticUnit {
     }
 
     public static IntergalacticUnit create(String intergalacticUnitName, String romanValue) {
+        System.out.println(intergalacticUnitName+romanValue);
         return new IntergalacticUnit(intergalacticUnitName, romanValue);
     }
 

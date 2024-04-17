@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.amaap.merchantguide.domain.service.io.reader.IntergalacticTransactionDataReaderTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-04-17T07:17:59" hostname="DESKTOP-GUO1275" time="0.043">
+  <properties/>
+  <testcase name="shouldBeAbleToReturnTrueIfGetsReadIntergalacticTransactionDataFile()" classname="com.amaap.merchantguide.domain.service.io.reader.IntergalacticTransactionDataReaderTest" time="0.035"/>
+  <testcase name="shouldThrowFileNotFoundExceptionIfFileNotFoundAtSpecifiedPath()" classname="com.amaap.merchantguide.domain.service.io.reader.IntergalacticTransactionDataReaderTest" time="0.004"/>
+  <system-out><![CDATA[globI
+pishX
+tegjL
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

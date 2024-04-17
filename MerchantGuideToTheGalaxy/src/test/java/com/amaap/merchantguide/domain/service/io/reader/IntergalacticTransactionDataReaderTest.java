@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -23,27 +24,18 @@ class IntergalacticTransactionDataReaderTest {
     @Test
     void shouldBeAbleToReturnTrueIfGetsReadIntergalacticTransactionDataFile() throws IOException {
         // arrange
-        File file = new File("E:\\MerchantGuideToTheGalaxy\\MerchantGuideToTheGalaxy\\src\\test\\java\\com\\amaap\\merchantguide\\IntergalacticTransactionData");
+        File file = new File("E:\\MerchantGuideToTheGalaxy\\MerchantGuideToTheGalaxy\\src\\main\\java\\resources\\IntergalacticTransactionData");
 
         // act && assert
         assertTrue(intergalacticTransactionDataReader.readTransactionData(file));
     }
 
     @Test
-    void shouldThrowIOExceptionWhenFailsToReadIntergalacticTransactionDataFile() throws IOException {
+    void shouldThrowFileNotFoundExceptionIfFileNotFoundAtSpecifiedPath() throws IOException {
         // arrange
-        File file = new File("E:\\MerchantGuideToTheGalaxy\\MerchantGuideToTheGalaxy\\src\\test\\java\\com\\amaap\\merchantguide\\config\\IntergalacticTransactionData");
+        File file = new File("E:\\MerchantGuideToTheGalaxy\\MerchantGuideToTheGalaxy\\src\\main\\java\\resources\\InvalidTransactionData");
 
         // act && assert
-        assertThrows(IOException.class, () -> intergalacticTransactionDataReader.readTransactionData(file));
+        assertThrows(FileNotFoundException.class, () -> intergalacticTransactionDataReader.readTransactionData(file));
     }
-
-//    @Test
-//    void shouldThrowInvalidInputDataLineExceptionWhenLineDoesNotMatchWithAnyDataFormat() throws IOException {
-//        // arrange
-//        File file = new File("E:\\MerchantGuideToTheGalaxy\\MerchantGuideToTheGalaxy\\src\\test\\java\\com\\amaap\\merchantguide\\IntergalacticTransactionData");
-//
-//        // act && assert
-//        assertThrows(InvalidInputDataLineException.class, () -> intergalacticTransactionDataReader.readTransactionData(file));
-//    }
 }

@@ -12,6 +12,7 @@ public class MetalCredit {
     }
 
     public static MetalCredit create(String metalName, int metalValue) {
+        System.out.println(metalName+"-"+metalValue);
         return new MetalCredit(metalName, metalValue);
     }
 

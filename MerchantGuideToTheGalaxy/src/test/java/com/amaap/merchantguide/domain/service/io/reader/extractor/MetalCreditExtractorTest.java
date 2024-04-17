@@ -10,7 +10,7 @@ class MetalCreditExtractorTest {
     @Test
     void shouldBeAbleToExtractAndReturnMetalAndValueFromInputLine() {
         // arrange
-        String inputLine = "glob glob Silver is 34 Credits";
+        String inputLine = "glob   glob  Silver  is 34  Credits";
         String metalName = "glob glob Silver";
         int metalValue = 34;
         MetalCredit expected = MetalCredit.create(metalName, metalValue);
