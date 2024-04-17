@@ -53,14 +53,18 @@ I have no idea what you are talking about
 
 #### Assumptions:
 
-1.The Intergalactic Unit and the Roman Value for it might be different for every input.
-2.For the classes Intergalactic Unit and MetalCredit id is Unit Name and Metal Name values respectively.
+- The Intergalactic Unit and the Roman Value for it might be different for every input.
+- For the classes Intergalactic Unit and MetalCredit id is Unit Name and Metal Name values respectively.
 
 #### Validations:
 
 1.If sequence of input data change.
 
 #### Modelling:
+
+#### Model
+
+- Entity :
 
 ##### class IntergalacticUnit
 
@@ -71,12 +75,53 @@ I have no idea what you are talking about
 - `romanValue`: String
   - Stores the Roman numeral representation of the intergalactic unit.
 
-###### Constructors
+###### Constructor
 
 - `IntergalacticUnit(String name, String romanValue)`
   - Constructs a new IntergalacticUnit with the provided name and Roman numeral value.
 
-###### Methods
+###### Method
 
 - `public static IntergalacticUnit create(String intergalacticUnitName, String romanValue)`
   - Creates a new IntergalacticUnit object with the specified name and Roman numeral value.
+
+##### MetalCredit
+
+###### States
+
+- `metalName`: String
+  - Description: Stores the name of the metal.
+- `metalValue`: int
+  - Description: Stores the value of the metal.
+
+###### Constructor
+
+- `MetalCredit(String metalName, int metalValue)`
+  - Description: Constructs a new MetalCredit with the provided metal name and value.
+
+###### Method
+
+- `public static MetalCredit create(String metalName, int metalValue)`
+
+  - Creates a new MetalCredit object with the specified metal name and value.
+
+- Value Objects
+
+###### Enum HttpStatus
+
+    - OK, BAD_REQUEST
+
+###### class Response
+
+- HttpSttaus httpSttaus
+- String message
+
+#### Controllers
+
+- IntergalacticUnitController
+- MetalCreditController
+
+#### Repositories
+
+- IntergalacticUnitReposiitory
+- MetalCreditRepository
